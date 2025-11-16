@@ -35,7 +35,7 @@ body
 .home .overlay
 {
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .cont 
 {
@@ -47,26 +47,30 @@ body
 /*
 3.home-navbar
 */
-
-.navbar img{
-    float: left;
+.navbar
+{
+    position: fixed;
 }
+
+
 .navbar ul {
- position: absolute;
- right: 0px;;
- margin-top:40px;;
- padding: 10px;
- list-style: none;
- width: 60;
+    position: relative;
+    top: -100px;
+    left: 550px;
+    margin-top:40px;;
+    padding: 10px;
+    list-style: none;
+    
+
 }
 .navbar ul li{
     display: inline-block;
-    
+    width: 90px;
 }
 .navbar a{
     text-decoration: none;
     text-transform: capitalize;
-    padding: 15px;
+    padding: 10px;
     color: #fff;
     font-weight: 700;
 }
@@ -76,7 +80,7 @@ body
 .home-content{
     position: relative;
     top: 400px;
-    left:-80px;
+    
     color: #fff;
     
 }
@@ -99,14 +103,21 @@ body
 */
 .home-content-btn{
     position: absolute;
-    left:710px;
+    left:590px;
 }
 .home-content-btn button
 {
+    margin-left: 20px;
     text-transform: capitalize;
     height: 40px;
     width: 140px;
     font-weight:bold ;
+}
+.home-content-btn button:hover
+{
+background-color: rgb(8, 184, 243);
+transition: 60ms ease-in;
+color: #fff;
 }
 .learn
 {
