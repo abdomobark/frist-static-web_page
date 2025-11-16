@@ -1,3 +1,16 @@
+/*
+1.genral
+2.home
+3.hom-navbat
+4.home-content
+5.home-content-text
+6-home-content-button
+7.about
+*/
+
+/*
+1.genral
+*/
 * 
 {
     margin: 0;
@@ -8,28 +21,106 @@ body
 {
     font-family: sans-serif;
 }
-
-.home {
+/*
+2.home
+*/
+.home 
+{
     height: 100vh;
     width: 100%;
     background-image: url(./Template_1/background1.jpg);
     background-size: cover;
 }
-.home .navbar{
-    position: absolute;
-    top: 0;
 
-}
- 
-
-    
-
-.home .overlay{
-   height: 100%;
+.home .overlay
+{
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
 }
-.about {
+.cont 
+{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+}
+/*
+3.home-navbar
+*/
+
+.navbar img{
+    float: left;
+}
+.navbar ul {
+ position: absolute;
+ right: 0px;;
+ margin-top:40px;;
+ padding: 10px;
+ list-style: none;
+ width: 60;
+}
+.navbar ul li{
+    display: inline-block;
+    
+}
+.navbar a{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 15px;
+    color: #fff;
+    font-weight: 700;
+}
+/*
+4.home-content
+*/
+.home-content{
+    position: relative;
+    top: 400px;
+    left:-80px;
+    color: #fff;
+    
+}
+/*
+5.home-content-text
+*/
+.home-content h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+.home-content p{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+/*
+6.home-content-button
+*/
+.home-content-btn{
+    position: absolute;
+    left:710px;
+}
+.home-content-btn button
+{
+    text-transform: capitalize;
+    height: 40px;
+    width: 140px;
+    font-weight:bold ;
+}
+.learn
+{
+    color: #fff;
+    background-color: rgb(8, 184, 243);
+}
+/*
+7.about
+*/
+
+.about 
+{
     height: 100vh;
     width: 100%;
     background-color: red;
 }
+
